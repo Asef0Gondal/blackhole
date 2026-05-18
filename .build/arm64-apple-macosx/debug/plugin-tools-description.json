@@ -1,0 +1,317 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Blackhole-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/sources",
+      "importPath" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/FileServer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/QRCodeGenerator.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Blackhole",
+      "moduleOutputPath" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Modules/Blackhole.swiftmodule",
+      "objects" : [
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp.swift.o",
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView.swift.o",
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView.swift.o",
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer.swift.o",
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Blackhole_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "blackhole"
+      ],
+      "outputFileMapPath" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Modules/Blackhole.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeApp.swift",
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeView.swift",
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/ContentView.swift",
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/FileServer.swift",
+        "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/QRCodeGenerator.swift"
+      ],
+      "tempsPath" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Blackhole" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Blackhole",
+      "-package-name",
+      "blackhole",
+      "-c",
+      "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeApp.swift",
+      "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeView.swift",
+      "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/ContentView.swift",
+      "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/FileServer.swift",
+      "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/QRCodeGenerator.swift",
+      "-I",
+      "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Blackhole_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "blackhole",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Blackhole" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole-entitlement.plist"
+    },
+    "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/FileServer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/QRCodeGenerator.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/sources"
+    },
+    "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.product/Objects.LinkFileList"
+    },
+    "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

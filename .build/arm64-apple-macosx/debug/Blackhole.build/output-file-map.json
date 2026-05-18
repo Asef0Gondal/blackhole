@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/master.swiftdeps"
+  },
+  "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeApp.swift": {
+    "dependencies": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp.d",
+    "object": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp.swift.o",
+    "swiftmodule": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp.swiftdeps",
+    "diagnostics": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp.dia"
+  },
+  "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeView.swift": {
+    "dependencies": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView.d",
+    "object": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView.swift.o",
+    "swiftmodule": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView~partial.swiftmodule",
+    "swift-dependencies": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView.swiftdeps",
+    "diagnostics": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView.dia"
+  },
+  "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/ContentView.swift": {
+    "dependencies": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView.d",
+    "object": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView.swift.o",
+    "swiftmodule": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView.dia"
+  },
+  "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/FileServer.swift": {
+    "dependencies": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer.d",
+    "object": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer.swift.o",
+    "swiftmodule": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer~partial.swiftmodule",
+    "swift-dependencies": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer.swiftdeps",
+    "diagnostics": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer.dia"
+  },
+  "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/QRCodeGenerator.swift": {
+    "dependencies": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator.d",
+    "object": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator.swift.o",
+    "swiftmodule": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator~partial.swiftmodule",
+    "swift-dependencies": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator.swiftdeps",
+    "diagnostics": "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator.dia"
+  }
+}

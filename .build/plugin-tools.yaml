@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "Blackhole-arm64-apple-macosx26.0-debug.exe": ["<Blackhole-arm64-apple-macosx26.0-debug.exe>"]
+  "Blackhole-arm64-apple-macosx26.0-debug.module": ["<Blackhole-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<Blackhole-arm64-apple-macosx26.0-debug.exe>","<Blackhole-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<Blackhole-arm64-apple-macosx26.0-debug.exe>","<Blackhole-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole":
+    is-mutated: true
+commands:
+  "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole-entitlement.plist"]
+    description: "Write auxiliary file /Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole-entitlement.plist"
+
+  "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeApp.swift","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeView.swift","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/ContentView.swift","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/FileServer.swift","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/QRCodeGenerator.swift"]
+    outputs: ["/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/sources"]
+    description: "Write auxiliary file /Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/sources"
+
+  "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator.swift.o"]
+    outputs: ["/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.product/Objects.LinkFileList"
+
+  "/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<Blackhole-arm64-apple-macosx26.0-debug.exe>":
+    tool: phony
+    inputs: ["<Blackhole-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    outputs: ["<Blackhole-arm64-apple-macosx26.0-debug.exe>"]
+
+  "<Blackhole-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Modules/Blackhole.swiftmodule"]
+    outputs: ["<Blackhole-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.Blackhole-arm64-apple-macosx26.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.product/Objects.LinkFileList"]
+    outputs: ["/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/Blackhole"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug","-o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole","-module-name","Blackhole","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_Blackhole_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Modules/Blackhole.swiftmodule","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g"]
+
+  "C.Blackhole-arm64-apple-macosx26.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole-entitlement.plist"]
+    outputs: ["<Blackhole-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/Blackhole"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole-entitlement.plist","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole"]
+
+  "C.Blackhole-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeApp.swift","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/BlackholeView.swift","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/ContentView.swift","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/FileServer.swift","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/QRCodeGenerator.swift","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/sources"]
+    outputs: ["/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeApp.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/BlackholeView.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/ContentView.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/FileServer.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/QRCodeGenerator.swift.o","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Modules/Blackhole.swiftmodule"]
+    description: "Compiling Swift Module 'Blackhole' (5 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","Blackhole","-emit-dependencies","-emit-module","-emit-module-path","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Modules/Blackhole.swiftmodule","-output-file-map","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/output-file-map.json","-incremental","-c","@/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Blackhole.build/sources","-I","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j12","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","Blackhole_main","-color-diagnostics","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","blackhole"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Sources/","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Package.swift","/Users/asifgondal/.gemini/antigravity/scratch/blackhole/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
